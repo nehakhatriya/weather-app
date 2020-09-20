@@ -1,0 +1,30 @@
+.CurrentWeather{
+    background-color: #ECEFF1;    
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+
+.Location{
+    font-size: 1rem;
+    vertical-align: middle;
+}
+
+.Temp{
+    font-size: 3rem;
+    vertical-align: middle;
+}
+
+.Img{
+    height: 4rem;
+    vertical-align: middle;
+}
+.Description{
+    font-size: 1.4rem;
+    vertical-align: middle;
+}
+.MinMax{
+    font-size: 1rem;
+    vertical-align: middle;  
+}

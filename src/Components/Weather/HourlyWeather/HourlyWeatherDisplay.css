@@ -1,0 +1,27 @@
+
+  .carousel-indicators li{
+    background-color:black;
+
+  }
+  .carousel-indicators{
+    bottom: 0;
+  }
+  .carousel-inner{
+    overflow: auto;
+    white-space: nowrap;
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon{
+    background-color:black;
+  }
+  .no-padding{
+    padding-left: 0;
+    padding-right: 0;
+
+     }
+     .carousel-control-prev i {
+      margin-left: -2px;
+    }
+    .carousel-control-next i {
+      margin-right: -4px;
+    }	

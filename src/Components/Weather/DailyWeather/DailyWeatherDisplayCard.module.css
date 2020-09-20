@@ -1,0 +1,25 @@
+
+.HourlyWeather{
+    text-align: center;
+    background-color: #DBDDE2;
+    float:left;
+    border-radius: 0;
+    border:none;
+}
+
+.Temp{
+    font-size: 0.9rem;
+    vertical-align: middle;
+    font-weight: 700;
+}
+
+.Img{
+    height: 50px;
+    max-width: 50px;
+}
+
+.Description{
+    font-size: 1rem;
+    vertical-align: middle;
+    font-weight: 400;
+}

@@ -1,0 +1,23 @@
+
+.header {
+    height: 100px;
+}
+
+.brand {
+    overflow-x: hidden;
+    min-width: 300px;
+    text-align: center;
+    width: 100%;
+}
+
+.brandicon {
+    color: white;
+    vertical-align: middle;
+}
+
+.brandtext {
+    color: white;
+    font-size: 2rem;
+    margin-left: 20px;
+    vertical-align: middle;
+}
