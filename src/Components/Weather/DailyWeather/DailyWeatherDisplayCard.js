@@ -6,7 +6,7 @@ const DailyWeatherDisplayCard = (props) => {
     let Day = days[props.weather.date.getDay()]
     let Date = `${Day},${props.weather.date.getDate()}`
     return (
-        <div className={[classes.HourlyWeather,"card"].join(' ')} style={{ width: "10rem" }}>
+        <div className={[classes.HourlyWeather,"card"].join(' ')} style={{ width: "100%" }}>
             <div className="card-body"> 
                     <p>{Date}</p>
                     <img src={props.weather.img} alt="loading"/>

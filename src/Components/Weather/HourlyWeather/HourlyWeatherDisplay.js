@@ -1,36 +1,23 @@
-import React,{Fragment} from 'react'
+import React, { Fragment } from 'react'
 import Card from './HourlyWeatherDisplayCard'
-import './HourlyWeatherDisplay.css'
-const HourlyWeatherDisplay =(props)=>{
-    let data =props.weather.map(el=>{
-        if(el.time.getDate()===(new Date).getDate()){
-
+import Carousel from 'react-elastic-carousel'
+const HourlyWeatherDisplay = (props) => {
+    let data = props.weather.map((el, i) => {
+        if (i < 12) {
             return (
-                <Card key={el.time} weather={el}/>
-                ) 
+                <Card key={el.time} weather={el} />
+            )
         }
-
     })
-    return(
-        <div style={{backgroundColor:"#B7C6EB"}}>
-        <div className="text-center h5 pt-2">Hourly</div>
-
-        <div id="demo" className="carousel slide" data-ride="carousel">
-
-            <div className="container carousel-inner no-padding">
-                <div className="carousel-item active">
-                    {data}
-                </div>
-
-                <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </a>
-                <a class="carousel-control-next" href="#demo" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </a>
-            </div>
-        </div>
-    </div>
+    let items;
+    if( window.innerWidth<300) items=1
+    else if(window.innerWidth<450) items=2
+    else if( window.innerWidth<800) items=4
+    else items=5
+    return (
+<Carousel style={{backgroundColor:"#B7C6EB"}} itemsToScroll={items} pagination={false} itemsToShow={items}>
+    {data}
+</Carousel>
     )
 }
 
