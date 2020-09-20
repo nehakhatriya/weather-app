@@ -6,7 +6,7 @@ const WEATHER_IMAGE = 'http://openweathermap.org/img/wn'
 export const getWeather = (location) => {
 
     const WEATHER_API_ONE_CALL_URL = `https://api.openweathermap.org/data/2.5/onecall?lat=${location.lat}&lon=${location.lon}&%20exclude={minutely}&hourly,daily&units=metric&appid=`
-    return axios.get(`${WEATHER_API_ONE_CALL_URL}56ea68bfc76e2b5eea108afffbe9e43c`)
+    return axios.get(`${WEATHER_API_ONE_CALL_URL}API_KEY`)
     .then(
         res => {
             let currentweather= {
